@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoMente – A Arte das Formas Área do Triângulo Retângulo e Paralelogramo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <canvas id="backgroundAnimationCanvas" class="background-animation"></canvas>
+
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <h1>GeoMente – A Arte das Formas</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#triangulo">Triângulo Retângulo</a></li>
+            <li><a href="#paralelogramo">Paralelogramo</a></li>
+            <li><a href="#simulador">Simulador</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Área do Triângulo Retângulo e Paralelogramo</h2>
+      <p>Explore os conceitos fundamentais de geometria de forma interativa e envolvente. Aprenda a calcular áreas de triângulos retângulos e paralelogramos através de explicações detalhadas, exemplos práticos e ferramentas interativas.</p>
+
+      <div class="guide-container">
+        <div class="guide-avatar">👩‍🏫</div>
+        <div class="guide-message">
+          <p>Olá! Eu sou a Prof. Deltiane, sua guia neste mundo da geometria. Vamos explorar juntos os conceitos de área do triângulo retângulo e paralelogramo!</p>
+          <div class="guide-name">Prof. Deltiane</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="introducao">
+    <div class="container">
+      <h2 class="section-title">Introdução às Áreas</h2>
+      <div class="content-card">
+        <h3>O que é Área?</h3>
+        <p>A área é a medida da superfície de uma figura plana. Em outras palavras, é a quantidade de espaço que uma figura ocupa em um plano. A unidade de medida de área é sempre uma unidade de comprimento ao quadrado (como cm², m², km²).</p>
+        <p>O cálculo de áreas é fundamental em diversas áreas do conhecimento, desde a arquitetura e engenharia até a física e a computação gráfica. Neste site, focaremos em duas figuras geométricas importantes: o triângulo retângulo e o paralelogramo.</p>
+        <div class="guide-container">
+          <div class="guide-avatar">👩‍🏫</div>
+          <div class="guide-message">
+            <p>Lembre-se: área é diferente de perímetro! Enquanto a área mede a superfície, o perímetro mede o contorno da figura.</p>
+            <div class="guide-name">Prof. Deltiane</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="triangulo">
+    <div class="container">
+      <h2 class="section-title">Área do Triângulo Retângulo</h2>
+
+      <div class="content-card">
+        <h3>O que é um Triângulo Retângulo?</h3>
+        <p>Um triângulo retângulo é um triângulo que possui um ângulo reto (90°). Os lados que formam o ângulo reto são chamados de catetos, e o lado oposto ao ângulo reto é chamado de hipotenusa.</p>
+        <p>Características importantes:</p>
+        <ul>
+          <li><strong>Catetos:</strong> lados que formam o ângulo reto</li>
+          <li><strong>Hipotenusa:</strong> lado oposto ao ângulo reto (sempre o maior lado)</li>
+          <li><strong>Teorema de Pitágoras:</strong> a² + b² = c² (onde c é a hipotenusa)</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h3>Fórmula da Área do Triângulo Retângulo</h3>
+        <p>A área de um triângulo retângulo pode ser calculada usando a fórmula:</p>
+        <div class="formula-box">
+          <div class="formula">A = (cateto₁ × cateto₂) / 2</div>
+          <p>Onde:</p>
+          <ul>
+            <li><strong>A</strong> é a área do triângulo</li>
+            <li><strong>cateto₁</strong> e <strong>cateto₂</strong> são os dois lados que formam o ângulo reto</li>
+          </ul>
+        </div>
+
+        <div class="visualization">
+          <div class="triangle-container">
+            <div class="triangle-formula">Área = (b × h) / 2</div>
+            <div class="triangle-right"></div>
+            <div class="triangle-base"></div>
+            <div class="triangle-height"></div>
+            <div class="triangle-right-angle">90°</div>
+            <div class="triangle-labels">
+              <div class="label-b">cateto₁</div>
+              <div class="label-h">cateto₂</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="example">
+          <h4>Exemplo Prático:</h4>
+          <p>Considere um triângulo retângulo com catetos de 6 cm e 8 cm. Para calcular sua área:</p>
+          <p>A = (6 × 8) / 2 = 48 / 2 = 24 cm²</p>
+        </div>
+
+        <div class="guide-container">
+          <div class="guide-avatar">👩‍🏫</div>
+          <div class="guide-message">
+            <p>No triângulo retângulo, os catetos são perpendiculares entre si, então um cateto pode ser considerado a base e o outro a altura!</p>
+            <div class="guide-name">Prof. Deltiane</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="paralelogramo">
+    <div class="container">
+      <h2 class="section-title">Área do Paralelogramo</h2>
+
+      <div class="content-card">
+        <h3>O que é um Paralelogramo?</h3>
+        <p>Um paralelogramo é um quadrilátero que possui dois pares de lados paralelos. Exemplos comuns incluem retângulos, losangos e quadrados.</p>
+        <p>Características importantes:</p>
+        <ul>
+          <li><strong>Lados opostos são paralelos e congruentes</strong></li>
+          <li><strong>Ângulos opostos são congruentes</strong></li>
+          <li><strong>Diagonais se cruzam no ponto médio</strong></li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h3>Fórmula da Área do Paralelogramo</h3>
+        <p>A área de um paralelogramo pode ser calculada usando a fórmula:</p>
+        <div class="formula-box">
+          <div class="formula">A = b × h</div>
+          <p>Onde:</p>
+          <ul>
+            <li><strong>A</strong> é a área do paralelogramo</li>
+            <li><strong>b</strong> é a base do paralelogramo</li>
+            <li><strong>h</strong> é a altura do paralelogramo (distância perpendicular entre as bases)</li>
+          </ul>
+        </div>
+
+        <div class="visualization">
+          <div class="parallelogram-container">
+            <div class="parallelogram-formula">Área = b × h</div>
+            <div class="parallelogram-shape"></div>
+            <div class="parallelogram-base"></div>
+            <div class="parallelogram-height"></div>
+            <div class="parallelogram-labels">
+              <div class="label-parallelogram-b">b</div>
+              <div class="label-parallelogram-h">h</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="example">
+          <h4>Exemplo Prático:</h4>
+          <p>Considere um paralelogramo com base de 10 cm e altura de 4 cm. Para calcular sua área:</p>
+          <p>A = 10 × 4 = 40 cm²</p>
+        </div>
+
+        <div class="guide-container">
+          <div class="guide-avatar">👩‍🏫</div>
+          <div class="guide-message">
+            <p>Importante: a altura não é o mesmo que o lado inclinado! A altura é sempre medida perpendicularmente à base.</p>
+            <div class="guide-name">Prof. Deltiane</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3>Relação entre Triângulo Retângulo e Paralelogramo</h3>
+        <p>Um paralelogramo pode ser dividido em dois triângulos retângulos congruentes traçando uma de suas diagonais. Isso nos permite entender que:</p>
+        <div class="formula-box">
+          <div class="formula">Área do paralelogramo = 2 × Área do triângulo retângulo</div>
+        </div>
+        <p>Se a diagonal divide o paralelogramo em dois triângulos iguais, então a área do paralelogramo é o dobro da área de um desses triângulos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="simulador">
+    <div class="container">
+      <h2 class="section-title">Simulador de Áreas</h2>
+
+      <div class="interactive-tool">
+        <h3>Calculadora de Área do Triângulo Retângulo</h3>
+        <div class="input-group">
+          <div class="input-field">
+            <label for="cateto1">Cateto 1:</label>
+            <input type="number" id="cateto1" placeholder="Digite o cateto 1">
+          </div>
+          <div class="input-field">
+            <label for="cateto2">Cateto 2:</label>
+            <input type="number" id="cateto2" placeholder="Digite o cateto 2">
+          </div>
+        </div>
+        <button id="calcular-triangulo">Calcular Área</button>
+        <button type="button" id="limpar-triangulo" style="background: transparent; border: 1px solid var(--accent-light); margin-left: 10px;">Limpar</button>
+        <div class="result" id="resultado-triangulo"></div>
+      </div>
+
+      <div class="interactive-tool">
+        <h3>Calculadora de Área do Paralelogramo</h3>
+        <div class="input-group">
+          <div class="input-field">
+            <label for="base-paralelogramo">Base (b):</label>
+            <input type="number" id="base-paralelogramo" placeholder="Digite a base">
+          </div>
+          <div class="input-field">
+            <label for="altura-paralelogramo">Altura (h):</label>
+            <input type="number" id="altura-paralelogramo" placeholder="Digite a altura">
+          </div>
+        </div>
+        <button id="calcular-paralelogramo">Calcular Área</button>
+        <button type="button" id="limpar-paralelogramo" style="background: transparent; border: 1px solid var(--accent-light); margin-left: 10px;">Limpar</button>
+        <div class="result" id="resultado-paralelogramo"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quiz">
+    <div class="container">
+      <h2 class="section-title">Quiz de Conhecimento</h2>
+      <div class="quiz-container">
+        <p>Teste seus conhecimentos sobre área do triângulo retângulo e paralelogramo com este quiz de 25 questões!</p>
+        <div class="quiz-questions" id="quiz-questions"></div>
+        <button id="verificar-respostas">Verificar Respostas</button>
+        <div class="quiz-results" id="quiz-results">
+          <h3>Resultado do Quiz</h3>
+          <p id="score-text">Você acertou X de 25 questões!</p>
+          <p id="performance-message"></p>
+          <button id="reiniciar-quiz">Reiniciar Quiz</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Geometria na Prática</div>
+        <p>© Todos os Direitos reservados ao Grupo2 1°EMI-IPI-2025-ASN</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
