@@ -1,0 +1,1 @@
+# GeoMente--rea-do-Triangulo-Ret-ngulo-e-Paralelogramo
